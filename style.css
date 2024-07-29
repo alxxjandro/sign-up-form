@@ -24,7 +24,6 @@ h1{
 .right-container-text h1 {
     line-height: 1.5em; 
     margin-bottom: 1em; 
-    max-width: 75%;
 }
 
 .left-container{
@@ -39,5 +38,41 @@ h1{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.form-content{
+    border: solid 1px orange;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding-left: 3rem;
+    flex-wrap: wrap;
+}
+
+
+.input-type-right,
+.input-type-left{
+    gap: 1rem;
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.input-type-right{
+    flex: 1;
+}
+
+.input-type-right div,
+.input-type-left div{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-type-right input,
+.input-type-left input{
+    width: 15vw;
+    min-width: 150px;
 }
 

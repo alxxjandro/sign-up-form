@@ -20,8 +20,42 @@
                 </h1>
                 <h1>You know you want to.</h1>
             </div>
-            <div class="right-container-form">dummy text</div>
-            <div class="right-container-submit">dummy text</div>
+            <div class="right-container-form">
+                <form>
+                    <div class="form-h1"><h1>Let's do this!</h1></div>
+                    <div class="form-content">
+                        <div class="input-type-left">
+                            <div>
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" name="userFirstName">
+                            </div>
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="userEmail">
+                            </div>
+                            <div>
+                                <label for="psw">PASSWORD</label>
+                                <input type="password" id="psw" name="UserPsw">
+                            </div>
+                        </div>
+                        <div class="input-type-right">
+                            <div>
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName" name="userLastName"> 
+                            </div>
+                            <div>
+                                <label for="phoneNumber">PHONE NUMBER</label>
+                                <input type="number" id="phoneNumber" name="userPhoneNumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            </div>
+                            <div>
+                                <label for="pswConfirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="pswConfirm" name="UserPswConfirm">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right-container-submit"></div>
         </div>        
     </div>
 </body>
