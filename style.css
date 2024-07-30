@@ -159,6 +159,26 @@ label{
 
 /*left part of the page*/
 
+
+.photo-credits{
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-credits p{
+    color: white;
+    position: absolute;
+    top: 96vh;
+    font-weight: 300;
+    font-size: .7em;
+}
+
+.photo-credits u:hover{
+    cursor: pointer;
+}
+
 .left-logo-container{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -184,3 +204,14 @@ label{
     width: 80px;
 }
 
+/* form validation status */
+
+input:focus{
+    border: 1px solid rgb(70, 70, 255);
+    outline: none;
+}
+
+#psw:invalid,
+#pswConfirm:invalid{
+    border-color: red;
+}

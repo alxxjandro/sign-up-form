@@ -16,7 +16,9 @@
                 <img class="odin-logo" src="rsc/odin-lined.png" alt="the odin project logo">
                 <h1>ODIN</h1>
             </div>
+            <div class="photo-credits"><p>Photo by <u>Halie West</u> on <u>Unsplash</u> </p></div>
             <img src="rsc/left-container-img.jpg" alt="background-image" class="left-container-img">
+            
         </div>
         <div class="right-container">
             <div class="right-container-text">
@@ -34,29 +36,29 @@
                             <div class="input-type-left">
                                 <div>
                                     <label for="firstName">FIRST NAME</label>
-                                    <input type="text" id="firstName" name="userFirstName">
+                                    <input type="text" id="firstName" name="userFirstName" required placeholder="Thor">
                                 </div>
                                 <div>
                                     <label for="email">EMAIL</label>
-                                    <input type="email" id="email" name="userEmail">
+                                    <input type="email" id="email" name="userEmail" required placeholder="ThorOdison@mail.com">
                                 </div>
                                 <div>
                                     <label for="psw">PASSWORD</label>
-                                    <input type="password" id="psw" name="UserPsw">
+                                    <input type="password" id="psw" name="UserPsw" minlength="8" required >
                                 </div>
                             </div>
                             <div class="input-type-right">
                                 <div>
                                     <label for="lastName">LAST NAME</label>
-                                    <input type="text" id="lastName" name="userLastName"> 
+                                    <input type="text" id="lastName" name="userLastName" required placeholder="Odison"> 
                                 </div>
                                 <div>
                                     <label for="phoneNumber">PHONE NUMBER</label>
-                                    <input type="number" id="phoneNumber" name="userPhoneNumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                                    <input type="tel" id="phoneNumber" name="userPhoneNumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required placeholder="123-456-7890">
                                 </div>
                                 <div>
                                     <label for="pswConfirm">CONFIRM PASSWORD</label>
-                                    <input type="password" id="pswConfirm" name="UserPswConfirm">
+                                    <input type="password" id="pswConfirm" name="UserPswConfirm" minlength="8" required>
                                 </div>
                             </div>
                         </div>
