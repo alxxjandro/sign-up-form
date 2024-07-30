@@ -1,25 +1,29 @@
 
+:root{
+    --bg-color: rgb(249, 250, 251);
+    --form-bg-color: white;
+    font-family: "Roboto",Arial, sans-serif;
+}
+
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: var(--bg-color);
 }
 
 h1{
     font-size: 1.15rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input{
     height: 1.65em;
-    /* border: solid 1px rgb(239,240,242); */
     border: solid 1px rgb(233, 234, 236);
     border-radius: 3px;
 }
 
 label{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: .7em;
     font-weight: bold;
     letter-spacing: .1em;
@@ -34,9 +38,16 @@ label{
     border: solid 1px blue;
     flex: 2;
     max-width: 65vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .right-container-text h1 {
+    padding-left: 3em;
+    width: 60%;
     line-height: 1.5em; 
     margin-bottom: 1em; 
 }
@@ -56,15 +67,17 @@ label{
 }
 
 .form-content{
-    border: solid 1px orange;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding-left: 3rem;
+    background-color: var(--form-bg-color);
+    border: solid 1px rgb(240, 240, 240);
+    padding:.6rem 0 1.7rem 3rem;
 }
 
 .form-h1{
     align-self: baseline;
+    padding-bottom: 1rem;
 }
 
 .form-bottom-part{
@@ -74,7 +87,7 @@ label{
 
 .input-type-right,
 .input-type-left{
-    gap: 1rem;
+    gap: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -91,8 +104,50 @@ label{
 }
 
 .input-type-right input,
-.input-type-left input{
+.input-type-left input,
+.form-submit-button button{
+    box-sizing: border-box;
     width: 15vw;
     min-width: 150px;
+    max-width: 200px;
 }
 
+.form-submit-button button{
+    border: none;
+    font-size: .9rem;
+    padding: 1em .6em;
+    border-radius: 10px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    margin: 2.2em 0 0 3em;
+    transition: opacity .2s ease;
+}
+
+.right-container-login{
+    margin: 2rem 0 0 3rem;
+}
+
+.right-container-login span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.form-submit-button button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.form-submit-button button:active{
+    opacity: .6;
+    cursor: pointer;
+}
+
+
+/* shadows */
+.form-content,
+.form-submit-button button{
+    box-shadow: 1px 8px 6px 1px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 1px 8px 6px 1px rgba(0,0,0,0.11);
+    -moz-box-shadow: 1px 8px 6px 1px rgba(0,0,0,0.11);
+}
