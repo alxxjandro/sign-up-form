@@ -215,3 +215,19 @@ input:focus{
 #pswConfirm:invalid{
     border-color: red;
 }
+
+.psw-container{
+    position: relative;
+}
+
+.psw-doNotMatch{
+    position: absolute;
+    top: 2.2rem;
+    font-weight: 300;
+    font-size: .7rem;
+    color: red;
+}
+
+.hide{
+    opacity: 0;
+}
